@@ -5,7 +5,7 @@
 - **Phone**: +375 (29) 242-09-57
 - **GitHub**: [Profile](https://github.com/savoalvy)
 
-## Обо мне
+## About me
 TBD
 
 ## Skills and Proficiency
