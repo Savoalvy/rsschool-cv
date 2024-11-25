@@ -1,0 +1,470 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 1284px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--staticWhite);
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.burger {
+    display: none;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    padding: 10px 8px;
+    gap: 8px;
+}
+
+.burger-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark);
+}
+
+.gifts-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 141px;
+    height: 40px;
+}
+
+.gifts-button__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.navigation {
+    width: 376px;
+
+    > ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        > a {
+            padding: 12px 20px;
+        }
+
+        > a:hover {
+            background-color: var(--primary10);
+            border-radius: 10px;
+            color: var(--primary);
+        }
+
+    }
+}
+
+.main-container {
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+
+/*similar backgrounds*/
+
+.about,
+.slider,
+.bestGifts {
+    background: url("../img/snow.png") 50% 50% / cover
+}
+
+/*center-row-flex*/
+
+.hero,
+.about,
+.gifts-container,
+.timer,
+.sliderText,
+.slider-content,
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*center-column-flex*/
+
+.hero-content,
+.slider,
+.footer,
+.bestGifts,
+.CTA,
+.timer-value-block,
+.button-card,
+.main-gifts,
+.social-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*global padding*/
+
+.header,
+.footer,
+.hero,
+.about,
+.slider,
+.bestGifts,
+.CTA {
+    padding: 0 8px;
+}
+
+.hero {
+    width: 100%;
+    height: 524px;
+    background: url("../img/snow.png") 50% 50% / cover,
+    url("../img/christmasBall.png") 50% 50% / cover;
+}
+
+.hero-content {
+    gap: 12px;
+    max-width: 426px;
+    color: var(--staticWhite);
+
+    > h1 {
+        text-align: center;
+    }
+}
+
+.about {
+    width: 100%;
+    min-height: 648px;
+}
+
+.about-container {
+    max-width: 1276px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: var(--staticWhite);
+}
+
+.about-info {
+    max-width: 426px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 60px;
+
+    > .caption {
+        color: var(--primary);
+    }
+
+    > h2, .p {
+        color: var(--dark);
+    }
+
+}
+
+.about-image {
+    max-width: 638px;
+    min-width: 364px;
+    width: 100%;
+    height: 528px;
+    border-radius: 20px;
+    background: url("../img/santaAndSnowman.png") 50% 50% / cover;
+}
+
+.slider {
+    text-align: center;
+    width: 100%;
+    height: 488px;
+    overflow: hidden;
+    gap: 20px;
+    color: var(--staticWhite);
+}
+
+.slider-content {
+    gap: 20px;
+    margin-left: auto;
+    padding-left: 5%;
+}
+
+.slider-img, .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.slider-arrows-container {
+    max-width: 1276px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+}
+
+.slider-arrow {
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--staticWhite40);
+    border-radius: 20px;
+    color: var(--staticWhite40);
+}
+
+.slider-arrow:hover {
+    color: var(--primary);
+    background-color: var(--staticWhite);
+    border-color: var(--staticWhite);
+}
+
+.bestGifts {
+    gap: 20px;
+    width: 100%;
+    min-height: 554px;
+
+    > .caption, .h2 {
+        text-align: center;
+        color: var(--staticWhite);
+    }
+}
+
+.gifts-container {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.gift {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 310px;
+    height: 342px;
+    background-color: var(--contentBackground);
+    border-radius: 20px;
+}
+
+.gift-description {
+    height: 112px;
+    background-color: var(--staticWhite);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 20px;
+
+    > .h3 {
+        color: var(--dark);
+    }
+}
+
+.forWork {
+    color: var(--tagPurple);
+}
+
+.forHealth {
+    color: var(--tagGreen);
+}
+
+.forHarmony {
+    color: var(--tagPink);
+}
+
+.CTA {
+    gap: 20px;
+    width: 100%;
+    height: 668px;
+    background: url("../img/snow.png") 50% 50% / cover,
+    url("../img/bg-forest.png") 50% 50% / cover;
+    color: var(--staticWhite);
+
+    > h2 {
+        max-width: 426px;
+        text-align: center;
+    }
+}
+
+.timer {
+    border-radius: 20px;
+    width: 344px;
+    height: 72px;
+    color: var(--staticWhite);
+    background-color: var(--staticWhite40);
+}
+
+.timer-value-block {
+    width: 82px;
+    height: 52px;
+    position: relative;
+}
+
+.timer-value-block:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 1px;
+    background-color: var(--staticWhite40);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer {
+    width: 100%;
+    gap: 60px;
+    color: var(--dark);
+    margin: 60px 0;
+}
+
+.button-container {
+    gap: 12px;
+    width: 100%;
+}
+
+.button-card {
+    gap: 12px;
+    width: 100%;
+    height: 204px;
+    background-color: var(--contentBackground);
+    border-radius: 20px;
+
+}
+
+.button-card:hover {
+    color: var(--primary);
+}
+
+.button-image {
+    width: 80px;
+    height: 80px;
+}
+
+.social-container {
+    gap: 12px;
+}
+
+.social {
+    > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.button {
+    width: 235px;
+    height: 56px;
+    border-radius: 20px;
+    background-color: var(--dark);
+}
+
+.button:hover {
+    background-color: var(--staticWhite);
+    color: var(--dark);
+}
+
+@media (max-width: 1280px) {
+    .button-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 769px) {
+    .slider-content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 668px) {
+    .about-container {
+        flex-wrap: wrap;
+    }
+
+    .about-info {
+        margin: 60px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        display: none;
+    }
+}
+
+
+/* Gifts page*/
+
+.main-gifts {
+    border-radius: 20px;
+    gap: 20px;
+    background: var(--primary) url("../img/bg-garl.png") no-repeat top center / contain;
+    padding: 60px 8px;
+
+    > h1 {
+        max-width: 426px;
+    }
+
+    .h1, ul {
+        color: var(--staticWhite);
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 8px;
+    }
+
+    a {
+        padding: 12px 20px;
+        border-radius: 10px;
+    }
+
+    a:hover {
+        background-color: var(--staticWhite20);
+    }
+}
+
+.gift-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+@media (max-width: 512px) {
+    .main-gifts {
+        ul {
+            gap: 0;
+        }
+        a {
+            padding: 12px 8px;
+        }
+    }
+}
