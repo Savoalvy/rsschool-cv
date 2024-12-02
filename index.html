@@ -37,7 +37,8 @@
             <div class="hero-content">
                 <p class="caption">Merry Christmas</p>
                 <h1 class="h1">Gift yourself the magic of new possibilities</h1>
-                <button class="actionSmall button" onclick="window.location.href='gifts.html'">Explore Magical Gifts</button>
+                <button class="actionSmall button" onclick="window.location.href='gifts.html'">Explore Magical Gifts
+                </button>
                 <p class="caption">and Happy New Year</p>
             </div>
         </section>
@@ -46,7 +47,8 @@
                 <div class="about-info">
                     <p class="caption">About</p>
                     <h2 class="h2">Unleash your inner superhero!</h2>
-                    <p class="p">This New Year marks the beginning of your journey to inner harmony and new strengths. We offer unique gifts that will help you improve your life.</p>
+                    <p class="p">This New Year marks the beginning of your journey to inner harmony and new strengths.
+                        We offer unique gifts that will help you improve your life.</p>
                 </div>
                 <div class="about-image"></div>
             </div>
@@ -121,26 +123,27 @@
 
         </section>
         <section class="CTA">
-                <h2 class="h2">Ready to start your journey to a better version of yourself?</h2>
-                <button class="button actionSmall" onclick="window.location.href='gifts.html'">Explore Magical Gifts</button>
-                <p class="caption">The New Year is Coming Soon...</p>
-                <div class="timer">
-                    <div class="timer-value-block">
-                       <h2 class="h2">47</h2>
-                        <h4 class="h4">DAYS</h4>
-                    </div>
-                    <div class="timer-value-block">
-                        <h2 class="h2">5</h2>
-                        <h4 class="h4">HOURS</h4>
-                    </div>
-                    <div class="timer-value-block">
-                        <h2 class="h2">34</h2>
-                        <h4 class="h4">MINUTES</h4>
-                    </div>
-                    <div class="timer-value-block">
-                        <h2 class="h2">12</h2>
-                        <h4 class="h4">SECONDS</h4>
-                    </div>
+            <h2 class="h2">Ready to start your journey to a better version of yourself?</h2>
+            <button class="button actionSmall" onclick="window.location.href='gifts.html'">Explore Magical Gifts
+            </button>
+            <p class="caption">The New Year is Coming Soon...</p>
+            <div class="timer">
+                <div class="timer-value-block">
+                    <h2 class="h2">47</h2>
+                    <h4 class="h4">DAYS</h4>
+                </div>
+                <div class="timer-value-block">
+                    <h2 class="h2">5</h2>
+                    <h4 class="h4">HOURS</h4>
+                </div>
+                <div class="timer-value-block">
+                    <h2 class="h2">34</h2>
+                    <h4 class="h4">MINUTES</h4>
+                </div>
+                <div class="timer-value-block">
+                    <h2 class="h2">12</h2>
+                    <h4 class="h4">SECONDS</h4>
+                </div>
             </div>
         </section>
     </main>
@@ -190,5 +193,26 @@
         </div>
     </footer>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const burger = document.querySelector('.burger');
+    const navigation = document.querySelector('.navigation');
+    const links = document.querySelectorAll('.navigation a');
+
+    burger.addEventListener('click', () => {
+      navigation.classList.toggle('active');
+      burger.classList.toggle('active');
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('active');
+        burger.classList.remove('active');
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
